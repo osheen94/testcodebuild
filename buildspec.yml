@@ -3,12 +3,17 @@ phases:
   install:
     commands:
       - echo Executing Install phase
+      - which python
       - pip install pyyaml
       - apt-get install python-yaml
       - which python
       - python --version
       - lsb_release -a
       - uname -r
+      - apt-get update
+      - apt-get upgrade
+      - apt install build-essential tcl
+      - apt-get install redis-server
     finally:
       - echo Executing INSTALL FINALLY
   pre_build:
