@@ -11,6 +11,7 @@ phases:
       - lsb_release -a
       - uname -r
       - apt-get update
+      - pip install --upgrade pip
       - pip install redis
       - ls -a
       - cd redis*
