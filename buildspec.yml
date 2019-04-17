@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Executing Install phase
       - pip install pyyaml
-      - sudo apt-get install python-yaml
+      - apt-get install python-yaml
       - which python
       - python --version
     finally:
