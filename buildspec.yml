@@ -3,6 +3,10 @@ phases:
   install:
     commands:
       - echo Executing Install phase
+      - pip install pyyaml
+      - sudo apt-get install python-yaml
+      - which python
+      - python --version
     finally:
       - echo Executing INSTALL FINALLY
   pre_build:
