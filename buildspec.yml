@@ -12,7 +12,8 @@ phases:
       - uname -r
       - apt-get update
       - pip install redis
-      - cd redis-py
+      - ls -a
+      - cd redis*
       - python setup.py install
 
     finally:
