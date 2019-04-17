@@ -11,13 +11,10 @@ phases:
       - lsb_release -a
       - uname -r
       - apt-get update
-      - apt install curl build-essential tcl
-      - curl -O http://download.redis.io/redis-stable.tar.gz
-      - tar xzvf redis-stable.tar.gz
-      - cd redis-stable
-      - make
-      - make test
-      - make install
+      - sudo pip install redis
+      - cd redis-py
+      - python setup.py install
+
     finally:
       - echo Executing INSTALL FINALLY
   pre_build:
