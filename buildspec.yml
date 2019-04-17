@@ -10,12 +10,8 @@ phases:
       - python --version
       - lsb_release -a
       - uname -r
-      - apt-get update
-      - pip install --upgrade pip
-      - pip install redis
+      - apt-get install -y redis-server  
       - ls -a
-      
-      - locate setup.py 
 
     finally:
       - echo Executing INSTALL FINALLY
