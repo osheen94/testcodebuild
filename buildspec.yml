@@ -11,8 +11,13 @@ phases:
       - lsb_release -a
       - uname -r
       - apt-get update
-      - apt install build-essential tcl
-      - apt-get install redis-server
+      - apt install curl build-essential tcl
+      - curl -O http://download.redis.io/redis-stable.tar.gz
+      - tar xzvf redis-stable.tar.gz
+      - cd redis-stable
+      - make
+      - make test
+      - make install
     finally:
       - echo Executing INSTALL FINALLY
   pre_build:
