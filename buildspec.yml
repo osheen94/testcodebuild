@@ -12,7 +12,7 @@ phases:
       - uname -r
       - apt-get install -y redis-server  
       - redis-server -v
-      - service redis-server status
+      - /etc/init.d/redis* status
       - ls -a
 
     finally:
