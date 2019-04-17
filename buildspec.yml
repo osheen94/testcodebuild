@@ -12,8 +12,8 @@ phases:
       - uname -r
       - apt-get install -y redis-server  
       - redis-server -v
-      - /etc/init.d/redis* start
-      - /etc/init.d/redis-server status
+      - /etc/init.d/redis-server start
+      - echo $?
       - ps -ef | grep -i redis
 
     finally:
