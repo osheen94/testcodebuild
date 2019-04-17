@@ -12,8 +12,10 @@ phases:
       - uname -r
       - apt-get install -y redis-server  
       - redis-server -v
-      - /etc/init.d/redis* status
-      - ls -a
+      - /etc/init.d/redis* start
+      - apt-get install -y netstat
+      - netstat -nap | grep -i 6379
+      - ps -ef | grep -i redis
 
     finally:
       - echo Executing INSTALL FINALLY
