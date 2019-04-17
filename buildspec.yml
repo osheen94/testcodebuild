@@ -11,7 +11,7 @@ phases:
       - lsb_release -a
       - uname -r
       - apt-get install -y redis-server  
-      - redis --version
+      - redis-server -v
       - service redis status
       - ls -a
 
