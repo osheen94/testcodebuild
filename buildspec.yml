@@ -14,8 +14,8 @@ phases:
       - pip install --upgrade pip
       - pip install redis
       - ls -a
-      - cd redis*
-      - python setup.py install
+      
+      - locate setup.py 
 
     finally:
       - echo Executing INSTALL FINALLY
