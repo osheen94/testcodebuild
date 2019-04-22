@@ -15,6 +15,7 @@ phases:
       - apt-get update 
       - redis-server -v
       - /etc/init.d/redis-server start
+      - /etc/init.d/redis-server status
       - echo $?
       - ps -ef | grep -i redis
 
