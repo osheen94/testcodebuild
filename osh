@@ -1,0 +1,42 @@
+
+- echo Executing Install phase
+13:36:59
+Mziyabo:
+- which python
+13:36:59
+Mziyabo:
+- pip install pyyaml
+13:36:59
+Mziyabo:
+- which python
+13:36:59
+Mziyabo:
+- python --version
+13:36:59
+Mziyabo:
+- lsb_release -a
+13:36:59
+Mziyabo:
+- uname -r
+13:36:59
+Mziyabo:
+- add-apt-repository -y ppa:chris-lea/redis-server
+13:36:59
+Mziyabo:
+- apt-get update
+13:36:59
+Mziyabo:
+- apt-get install -y redis-server
+13:36:59
+Mziyabo:
+- redis-server -v
+13:36:59
+Mziyabo:
+- /etc/init.d/redis-server start
+13:36:59
+Mziyabo:
+- /etc/init.d/redis-server status
+13:36:59
+Mziyabo:
+- ps -ef | grep -i redis
+13:36:59
