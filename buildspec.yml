@@ -11,6 +11,7 @@ phases:
       - lsb_release -a
       - uname -r
       - add-apt-repository -y ppa:chris-lea/redis-server
+      - apt-get install -y redis-server
       - apt-get update 
       - redis-server -v
       - /etc/init.d/redis-server start
